@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: sans-serif;    
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding-top: 10px;
+    padding-bottom: 10px;        
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    margin-bottom: .5rem;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+}
+
+header form{
+    flex: 1 0 30vw;
+    justify-content: center;
+    margin-bottom: .5rem;        
+}
+
+header form fieldset{
+    flex: 1 0 auto;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+}
+
+header form fieldset input{
+    flex: 1 0 auto;
+    border: none;
+    outline: none;
+    border-radius: 2rem 0 0 2rem;
+    padding: 0 0 0 15px;
+    font-size: 1rem;
+    height: 30px;  
+}
+
+header form fieldset button{
+    flex: 0 0 2rem;
+    border: none;
+    outline: none;
+    border-radius: 0 2rem 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 8px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.fa-id-card{
+    padding-left: .2rem;
+}
+
+.fa-sign-out-alt{
+    padding-left: 0.2rem;
+}
+
+.fa-shopping-basket{
+    padding-left: 0.2rem;
+}
+
+/* .principal{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(210,210, 210);
+    border: 5rem rgb(210,210, 210) solid;
+} */
+
+.flex-container{
+    display: flex;
+    justify-content: center;      
+}
+
+.principal{
+    padding: 15px 0 5px 0;    
+}
+
+.dn{
+    display: none;
+}
+
+.form-register{
+    background-color: rgb(210,210, 210);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem 0 rgba(16, 16, 16, 1);
+}
+
+.form-fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    border: none; 
+    margin: 1rem 0;
+    align-items: center;   
+    justify-content: space-between;
+}
+
+.form-fieldset-input{
+    flex: 1 0 auto;
+    border: none;
+    outline: none;
+    padding: .25rem;
+}
+
+.form-fieldset-buttons{
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 0 2rem 2rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
+}
+
+.buttons{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius:28px;
+	border:1px solid #747474;
+}
+
+.buttons:hover{
+    background-color: #0022AA;
+    color: #ffffff;
+}
+
+.footer{
+    text-align: center;
+}
+
+.fa-credit-card{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.fa-gift{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.tituloFooter{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: .3rem 0;
+}
+
+.textoFooter {
+    font-size: .7rem;
+    padding: .1rem 0;
+}
+
+.copyright {
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.iconsFooter {
+    transition: all 0.3s ease;
+  }
+
+.iconsFooter:hover {
+    color: #EAC926;
+  }
+
+/* Mobile Firts */
+
+@media screen and (min-width: 768px) {
+    
+    .main-header{
+        padding: 10px;
+    }
+    
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand{
+        padding: 0 20px 0 0;
+    }
+
+    .logo{
+        width: 150px;       
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+        margin: 0;
+        padding: 0 0 0 20px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 0 3px;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        gap: 4px;                
+    }
+
+}
+
+@media (min-width: 1200px) {
+    /* Se van a notar los cambios cuando la pantalla tenga como minimo 1200 */
+  
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .brand{
+        padding: 0 20px 0 0;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .copy-header{
+        max-width: none;
+        font-size: 17px;
+        font-weight: 400;
+        padding: 0 0 0 20px;
+        margin: 0;
+    }
+
+    .main-navbar {
+        margin-top: 10px;
+    }
+
+    .main-navbar li{
+        margin: 0 10px;
+    }
+
+    .main-navbar a{
+        font-size: 19px;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    .footer-container{
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+}
